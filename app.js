@@ -71,7 +71,7 @@ var app = new Vue({
     },
     mounted: function() {
         axios
-            .get('users_crmm.json')
+            .get('users_111.json')
             .then(response => {
                 this.products = response.data.data.goods;
                 this.brands = response.data.data.brands;
