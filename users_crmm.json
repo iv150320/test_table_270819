@@ -1,0 +1,22 @@
+{"code":"success",
+    "data":
+    {"goods":
+        [
+    {"good_id":"1","good":"Дениc","category_id":"1","brand":"Топорков","price":"30","rating":"115"},
+    {"good_id":"2","good":"Лукьян","category_id":"2","brand":"Рагозин","price":"22","rating":"22"},
+    {"good_id":"3","good":"Ярослав","category_id":"1","brand":"Рыжов","price":"45","rating":"10"},
+    {"good_id":"4","good":"Денис","category_id":"2","brand":"Топорков","price":"55","rating":"102"},
+    {"good_id":"5","good":"Артем","category_id":"1","brand":"Кашников","price":"22","rating":"97"},
+    {"good_id":"6","good":"Лада","category_id":"2","brand":"Боярская","price":"25","rating":"15"},
+    {"good_id":"7","good":"Иосиф","category_id":"2","brand":"Южанин","price":"41","rating":"0"},
+    {"good_id":"8","good":"Станислав","category_id":"1","brand":"Качаев","price":"34","rating":"0"},
+    {"good_id":"9","good":"Эдуард","category_id":"1","brand":"Бузинский","price":"32","rating":"200"}
+    ],
+    "brands":
+    [
+
+        ]
+}
+}
+
+

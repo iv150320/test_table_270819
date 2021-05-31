@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Тест</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.css">
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10">
+
+                    <input v-model.trim="inputSearch" type="text" placeholder="Поиск: по имени и фамилии" />
+
+                    <select v-model="selectSort">
+                        <option v-for="rule in sortRules" :key="rule.key" :value="rule.key">{{ rule.title }}</option>
+                    </select>
+
+                    <button @click="clear" class="primary small">Сброс</button>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Имя</th>
+                                <th>Фамилия</th>
+                                <th>Возраст</th>
+                                <th>Рейтинг</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr
+                                is="ProductItem"
+                                v-for="product in filteredProducts"
+                                :product="product"
+                                :key="product.id"
+                            ></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
