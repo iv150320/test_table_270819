@@ -35,22 +35,22 @@ The application follows a standard client-side architecture where the browser or
 
 ```mermaid
 graph TD
-    A[👤 User] --> B[🌐 Web Browser];
-    B --> C{Loads index.html};
-    C --> D[📄 HTML Structure];
-    C --> E[🎨 style.css & mini.css (Styling)];
-    C --> F[⚙️ app.js (Vue.js Application Logic)];
+    A["👤 User"] --> B["🌐 Web Browser"];
+    B --> C{"Loads index.html"};
+    C --> D["📄 HTML Structure"];
+    C --> E["🎨 style.css & mini.css (Styling)"];
+    C --> F["⚙️ app.js (Vue.js Application Logic)"];
 
-    F --> G[🚀 Vue.js Instance initialized on #app];
-    G --> H[📦 Reactive Data State (inputSearch, selectSort)];
-    G --> I[⚡️ Event Handlers (User Interactions)];
+    F --> G["🚀 Vue.js Instance initialized on #app"];
+    G --> H["📦 Reactive Data State (inputSearch, selectSort)"];
+    G --> I["⚡️ Event Handlers (User Interactions)"];
 
-    G -- Data Fetch on Mount --> J(HTTP Request via Axios);
-    J --> K[📁 users_111.json (Data Source)];
+    G -- Data Fetch on Mount --> J("HTTP Request via Axios");
+    J --> K["📁 users_111.json (Data Source)"];
     K -- Fetches & Parses Data --> G;
     
-    H -- Filters & Sorts Data --> L[✅ `filteredProducts` Computed Property];
-    L -- Updates UI --> M[🖼️ Renders <table> & <ProductItem> Components];
+    H -- Filters & Sorts Data --> L["✅ `filteredProducts` Computed Property"];
+    L -- Updates UI --> M["🖼️ Renders <table> & <ProductItem> Components"];
     M --> B;
 
     I -- Updates Data State --> H;
